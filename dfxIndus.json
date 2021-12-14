@@ -1,0 +1,25 @@
+{
+	"industryPartners": [
+		{
+			"_id": "id",
+			"userType": "IndustryPartner",
+			"name": "BigCompany",
+			"email": "industryPartner@industry.com",
+			"password": "123456",
+			"vacancies": [
+				{
+					"vacancyType": "software",
+					"jobTitle": "engineer",
+					"location": "london",
+					"description": "xyz"
+				},
+				{
+					"vacancyType": "dataScience",
+					"jobTitle": "data scientist",
+					"location": "london",
+					"description": "xyz"
+				}
+			]
+		}
+	]
+}
