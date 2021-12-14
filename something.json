@@ -1,0 +1,26 @@
+{
+	"users": [
+		{
+			"_id": "id",
+			"userType": "Graduate",
+			"personalDetails": {
+				"name": {
+					"firstName": "Hello",
+					"lastName": "World"
+				},
+				"gitHub": "http",
+				"linkedIn": "http",
+				"contact": {
+					"telNo": "0987654321",
+					"email": {
+						"personalEmail": "hello@world.com",
+						"workEmail": "hello@df.com"
+					}
+				}
+			},
+			"yourTraining": {
+				"trainingType": ""
+			}
+		}
+	]
+}
