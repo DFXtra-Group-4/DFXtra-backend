@@ -58,7 +58,7 @@
 					}
 				],
 				"workExperience": {
-					"type": "Experience",
+					"workExpType": "Experience",
 					"employer": "Fred's ice cream",
 					"position": "Ice cream maker",
 					"from": "2012",
@@ -68,7 +68,7 @@
 					"description": "I made the ice creams"
 				},
 				"certificatesAndAwards": {
-					"type": "Cert",
+					"certificateType": "Cert",
 					"issuer": "Oracle",
 					"award": "Oracle Java SE",
 					"grade": "Distinction",
@@ -106,7 +106,7 @@
 						"passStatus": {
 							"pass": "passed",
 							"fail": "failed",
-							"todo": "todo"
+							"pending": "pending"
 						}
 					},
 					{
@@ -151,7 +151,7 @@
 			"password": "123456",
 			"vacancies": [
 				{
-					"type": "software",
+					"vacancyType": "software",
 					"jobTitle": "engineer",
 					"location": "london",
 					"description": "xyz"
