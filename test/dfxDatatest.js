@@ -43,7 +43,7 @@ describe(`Test of retrieving trainees`, () => {
 			profileToBeUpdated.personalDetails.name.firstName = "Test";
 			profileToBeUpdated.personalDetails.name.lastName = "Data";
 
-			const sendData = {
+			const updateTheProfile = {
 				"firstName": "Data",
 				"lastName": "Test"
 			};
@@ -52,7 +52,7 @@ describe(`Test of retrieving trainees`, () => {
 			const res = await chai
 				.request(server)
 				.put(`/trainee/${profileToBeUpdated._id}/edit`)
-				.send(sendData);
+				.send(updateTheProfile);
 
 			expect(res).to.have.status(200);
 			console.log(res.body);
