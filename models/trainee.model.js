@@ -2,7 +2,7 @@ const mongoose = require(`mongoose`);
 const Schema = mongoose.Schema;
 
 const traineesSchema = new Schema({
-	userType: { type: String, required: true },
+	userType: { type: String, default: "Graduate" },
 	personalDetails: {
 		name: {
 			firstName: { type: String, required: true },

@@ -37,7 +37,26 @@ describe(`Test of retrieving trainees`, () => {
 		});
 	});
 
-	// it(`/GET test on home route should return sampleData`, async () => {
-	// 	await chai.request(server).get(`/`).send();
-	// });
+	describe("/Put data", () => {
+		it("/should update the given profile by id", async () => {
+			const profileToBeUpdated = testDataArray[0];
+			profileToBeUpdated.personalDetails.name.firstName = "Test";
+			profileToBeUpdated.personalDetails.name.lastName = "Data";
+
+			const sendData = {
+				"firstName": "Data",
+				"lastName": "Test"
+			};
+
+			console.log(profileToBeUpdated._id);
+			const res = await chai
+				.request(server)
+				.put(`/trainee/${profileToBeUpdated._id}/edit`)
+				.send(sendData);
+
+			expect(res).to.have.status(200);
+			console.log(res.body);
+			expect(res.body).to.be.a(`string`).eql(`Profile updated!`);
+		});
+	});
 });
