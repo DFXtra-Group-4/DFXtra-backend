@@ -12,13 +12,9 @@
 			"contact": {
 				"telNo": "0987654321",
 				"email": {
-					"personalEmail": {
-						"email": "hello@world.com",
-						"password": "122334"
-					},
+					"email": "hello@world.com",
 					"workEmail": "hello@df.com"
-				},
-				"password": "123456"
+				}
 			},
 			"profileHeadline": "My Headline"
 		},
@@ -34,70 +30,79 @@
 				"priority": "10",
 				"description": "string"
 			},
+
 			"schoolQualifications": [
 				{
 					"school": "st Winifred's",
-					"exam-type": "a-level",
+					"examType": "a-level",
 					"subject": "maths",
 					"grade": "A",
 					"year": "2015",
 					"weight": "L",
 					"priority": "5",
-					"description": ""
+					"description": "My school information"
 				},
 				{
 					"school": "st Winifred's",
-					"exam-type": "a-level",
-					"subject": "english",
+					"examType": "a-level",
+					"subject": "maths",
 					"grade": "A",
-					"year": 2015,
+					"year": "2015",
 					"weight": "L",
 					"priority": "5",
-					"description": ""
+					"description": "My school information"
 				}
 			],
-			"workExperience": {
-				"workExpType": "Experience",
-				"employer": "Fred's ice cream",
-				"position": "Ice cream maker",
-				"from": "2012",
-				"to": "2013",
-				"weight": "M",
-				"priority": "5",
-				"description": "I made the ice creams"
-			},
-			"certificatesAndAwards": {
-				"certificateType": "Cert",
-				"issuer": "Oracle",
-				"award": "Oracle Java SE",
-				"grade": "Distinction",
-				"year": "2021",
-				"Weight": "L",
-				"Priority": "7",
-				"Description": ""
-			},
-			"portfolio": {
-				"title": "How to identify opportunities",
-				"url": "www.github.com",
-				"year": "2021",
-				"weight": "L",
-				"priority": "9",
-				"description": "A motivation talk that I delivered"
-			},
-			"achievements": {
-				"organization": "organization",
-				"title": "my title",
-				"from": "2012",
-				"to": "2013",
-				"weight": "M",
-				"priority": "5",
-				"description": "I made the ice creams"
-			}
+			"workExperience": [
+				{
+					"workExpType": "Experience",
+					"employer": "Fred's ice cream",
+					"position": "Ice cream maker",
+					"from": "2012",
+					"to": "2013",
+					"weight": "M",
+					"priority": "5",
+					"description": "I made the ice creams"
+				}
+			],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Oracle",
+					"award": "Oracle Java SE",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [
+				{
+					"title": "How to identify opportunities",
+					"url": "www.github.com",
+					"year": "2021",
+					"weight": "L",
+					"priority": "9",
+					"description": "A motivation talk that I delivered"
+				}
+			],
+			"achievements": [
+				{
+					"organization": "organization",
+					"title": "my title",
+					"from": "2012",
+					"to": "2013",
+					"weight": "M",
+					"priority": "5",
+					"description": "I made the ice creams"
+				}
+			]
 		},
 		"yourTraining": {
-			"trainingType": "",
-			"learningType": "",
-			"trainer": "",
+			"trainingPath": "Software Engineering",
+			"cohort": "Software Engineering-1",
+			"trainer": "Ed",
 			"trainingFinishDate": "SomeDateType",
 			"modules": [
 				{
@@ -109,11 +114,11 @@
 					}
 				},
 				{
-					"moduleName": "Module1, Challenge A",
+					"moduleName": "Module1, Challenge B",
 					"passStatus": {
 						"pass": "passed",
 						"fail": "failed",
-						"todo": "todo"
+						"pending": "pending"
 					}
 				}
 			]
@@ -138,16 +143,15 @@
 					"scoreName": "Java",
 					"score": "someNumber"
 				}
-			],
-			"video": "videoLink"
+			]
 		}
 	},
 	{
-		"_id": { "$oid": "dc1ac1002b92436dc4c010b2" },
+		"_id": { "$oid": "dc1ac1002b92436dc4c010b1" },
 		"userType": "Graduate",
 		"personalDetails": {
 			"name": {
-				"firstName": "Nikesh",
+				"firstName": "Joshlan",
 				"lastName": "DigitalFutures"
 			},
 			"gitHub": "http",
@@ -155,13 +159,9 @@
 			"contact": {
 				"telNo": "0987654321",
 				"email": {
-					"personalEmail": {
-						"email": "hello@world.com",
-						"password": "122334"
-					},
+					"email": "hello@world.com",
 					"workEmail": "hello@df.com"
-				},
-				"password": "123456"
+				}
 			},
 			"profileHeadline": "My Headline"
 		},
@@ -177,70 +177,79 @@
 				"priority": "10",
 				"description": "string"
 			},
+
 			"schoolQualifications": [
 				{
 					"school": "st Winifred's",
-					"exam-type": "a-level",
+					"examType": "a-level",
 					"subject": "maths",
 					"grade": "A",
 					"year": "2015",
 					"weight": "L",
 					"priority": "5",
-					"description": ""
+					"description": "My school information"
 				},
 				{
 					"school": "st Winifred's",
-					"exam-type": "a-level",
-					"subject": "english",
+					"examType": "a-level",
+					"subject": "maths",
 					"grade": "A",
-					"year": 2015,
+					"year": "2015",
 					"weight": "L",
 					"priority": "5",
-					"description": ""
+					"description": "My school information"
 				}
 			],
-			"workExperience": {
-				"workExpType": "Experience",
-				"employer": "Fred's ice cream",
-				"position": "Ice cream maker",
-				"from": "2012",
-				"to": "2013",
-				"weight": "M",
-				"priority": "5",
-				"description": "I made the ice creams"
-			},
-			"certificatesAndAwards": {
-				"certificateType": "Cert",
-				"issuer": "Oracle",
-				"award": "Oracle Java SE",
-				"grade": "Distinction",
-				"year": "2021",
-				"Weight": "L",
-				"Priority": "7",
-				"Description": ""
-			},
-			"portfolio": {
-				"title": "How to identify opportunities",
-				"url": "www.github.com",
-				"year": "2021",
-				"weight": "L",
-				"priority": "9",
-				"description": "A motivation talk that I delivered"
-			},
-			"achievements": {
-				"organization": "organization",
-				"title": "my title",
-				"from": "2012",
-				"to": "2013",
-				"weight": "M",
-				"priority": "5",
-				"description": "I made the ice creams"
-			}
+			"workExperience": [
+				{
+					"workExpType": "Experience",
+					"employer": "Fred's ice cream",
+					"position": "Ice cream maker",
+					"from": "2012",
+					"to": "2013",
+					"weight": "M",
+					"priority": "5",
+					"description": "I made the ice creams"
+				}
+			],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Oracle",
+					"award": "Oracle Java SE",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [
+				{
+					"title": "How to identify opportunities",
+					"url": "www.github.com",
+					"year": "2021",
+					"weight": "L",
+					"priority": "9",
+					"description": "A motivation talk that I delivered"
+				}
+			],
+			"achievements": [
+				{
+					"organization": "organization",
+					"title": "my title",
+					"from": "2012",
+					"to": "2013",
+					"weight": "M",
+					"priority": "5",
+					"description": "I made the ice creams"
+				}
+			]
 		},
 		"yourTraining": {
-			"trainingType": "",
-			"learningType": "",
-			"trainer": "",
+			"trainingPath": "Software Engineering",
+			"cohort": "Software Engineering-1",
+			"trainer": "Ed",
 			"trainingFinishDate": "SomeDateType",
 			"modules": [
 				{
@@ -252,11 +261,11 @@
 					}
 				},
 				{
-					"moduleName": "Module1, Challenge A",
+					"moduleName": "Module1, Challenge B",
 					"passStatus": {
 						"pass": "passed",
 						"fail": "failed",
-						"todo": "todo"
+						"pending": "pending"
 					}
 				}
 			]
@@ -281,8 +290,7 @@
 					"scoreName": "Java",
 					"score": "someNumber"
 				}
-			],
-			"video": "videoLink"
+			]
 		}
 	}
 ]

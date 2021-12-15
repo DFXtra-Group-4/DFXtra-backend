@@ -31,57 +31,68 @@ const traineesSchema = new Schema({
 			priority: { type: Number },
 			description: { type: String }
 		},
-		schoolQualifications: {
-			school: { type: String, required: true },
-			examType: { type: String, required: true },
-			subject: { type: String, required: true },
-			grade: { type: String, required: true },
-			year: { type: Number, required: true },
-			weight: { type: String, required: true },
-			priority: { type: String, required: true },
-			description: { type: String, required: true }
-		},
-		workExperience: {
-			workExpType: { type: String },
-			employer: { type: String },
-			position: { type: String },
-			from: { type: String },
-			to: { type: String },
-			weight: { type: String },
-			priority: { type: Number },
-			description: { type: String }
-		},
-		certificateAndAwards: {
-			certificateType: { type: String },
-			issuer: { type: String },
-			award: { type: String },
-			grade: { type: String },
-			year: { type: String },
-			weight: { type: String },
-			priority: { type: String },
-			description: { type: String }
-		},
-		portfolio: {
-			title: { type: String },
-			url: { type: String },
-			year: { type: String },
-			weight: { type: String },
-			priority: { type: String },
-			description: { type: String }
-		},
-		achievements: {
-			organization: { type: String },
-			title: { type: String },
-			from: { type: String },
-			to: { type: String },
-			weight: { type: String },
-			priority: { type: Number },
-			description: { type: String }
-		}
+
+		schoolQualifications: [
+			{
+				school: { type: String, required: true },
+				examType: { type: String, required: true },
+				subject: { type: String, required: true },
+				grade: { type: String, required: true },
+				year: { type: Number, required: true },
+				weight: { type: String, required: true },
+				priority: { type: String, required: true },
+				description: { type: String, required: true }
+			}
+		],
+		workExperience: [
+			{
+				workExpType: { type: String },
+				employer: { type: String },
+				position: { type: String },
+				from: { type: String },
+				to: { type: String },
+				weight: { type: String },
+				priority: { type: Number },
+				description: { type: String }
+			}
+		],
+		certificatesAndAwards: [
+			{
+				certificateType: { type: String },
+				issuer: { type: String },
+				award: { type: String },
+				grade: { type: String },
+				year: { type: String },
+				weight: { type: String },
+				priority: { type: Number },
+				description: { type: String }
+			}
+		],
+		portfolio: [
+			{
+				title: { type: String },
+				url: { type: String },
+				year: { type: String },
+				weight: { type: String },
+				priority: { type: String },
+				description: { type: String }
+			}
+		],
+		achievements: [
+			{
+				organization: { type: String },
+				title: { type: String },
+				from: { type: String },
+				to: { type: String },
+				weight: { type: String },
+				priority: { type: Number },
+				description: { type: String }
+			}
+		]
 	},
 	yourTraining: {
-		trainingType: { type: String },
-		learningType: { type: String },
+		trainingPath: { type: String },
+		cohort: { type: String },
 		trainer: { type: String },
 		trainingFinishDate: { type: String },
 		modules: [
@@ -115,8 +126,7 @@ const traineesSchema = new Schema({
 				scoreName: { type: String },
 				score: { type: String }
 			}
-		],
-		video: { type: String }
+		]
 	}
 });
 
