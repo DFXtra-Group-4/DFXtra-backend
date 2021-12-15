@@ -1,6 +1,6 @@
-[
+
 	{
-		"_id": "1",
+		"_id": {"$oid" : "dc1ac1002b92436dc4c010b1" },
 		"userType": "Graduate",
 		"personalDetails": {
 			"name": {
@@ -141,9 +141,9 @@
 			],
 			"video": "videoLink"
 		}
-	},
+	}
 	{
-		"_id": "2",
+		"_id": {"$oid" : "dc1ac1002b92436dc4c010b2" },
 		"userType": "Graduate",
 		"personalDetails": {
 			"name": {
@@ -285,4 +285,4 @@
 			"video": "videoLink"
 		}
 	}
-]
+
