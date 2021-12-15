@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
 const loginPage = require("./routes/loginPage");
-const trainee = require("./routes/trainee");
+const singleTrainee = require("./routes/singleTrainee");
+const allTrainees = require("./routes/AllTrainees");
 
 const port = process.env.PORT ?? 4000;
 const host = process.env.HOST ?? "localhost";
@@ -20,7 +21,8 @@ const main = async () => {
 
 app.use(cors());
 app.use(`/loginPage`, loginPage);
-app.use(`/trainee`, trainee);
+app.use(`/trainee`, singleTrainee);
+app.use("/trainees", allTrainees);
 
 main()
 	.then(() => console.log(`Connecting to DB @ ${process.env.DB_URI}`))

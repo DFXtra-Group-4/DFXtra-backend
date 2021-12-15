@@ -26,7 +26,18 @@ describe(`Test of retrieving trainees`, () => {
 				throw new Error();
 			});
 	});
-	it(`/GET test on home route should return sampleData`, async () => {
-		await chai.request(server).get(`/`).send();
+
+	describe(`/GET data`, () => {
+		it(`/should return all of the data as an array`, async () => {
+			const res = await chai.request(server).get(`/trainees`).send();
+
+			expect(res).to.have.status(200);
+			expect(res.body).to.be.an(`array`);
+			expect(res.body.length).to.be.eql(testDataArray.length);
+		});
 	});
+
+	// it(`/GET test on home route should return sampleData`, async () => {
+	// 	await chai.request(server).get(`/`).send();
+	// });
 });
