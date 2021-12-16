@@ -2,18 +2,24 @@ const mongoose = require(`mongoose`);
 const Schema = mongoose.Schema;
 
 const industryPartnerSchema = new Schema({
-	industryPartnerId: { type: String },
-	userType: { type: String },
-	name: { type: String },
+	userType: { type: String, default: "IndustryPartner" },
+	companyName: { type: String },
+	name: {
+		firstName: { type: String },
+		lastName: { type: String }
+	},
+
 	email: { type: String },
+	password: { type: String },
+
 	vacancies: [
 		{
-			vacancyType: { type: String },
-			jobTitle: { type: String },
+			vacancyType: { type: String }, //Full time or Part time
+			jobTitle: { type: String }, // Software eng or data science
 			location: { type: String },
-			description: { type: String }
+			jobSummary: { type: String }
 		}
 	]
 });
 
-module.exports = mongoose.model("IndustryPartner", traineesSchema);
+module.exports = mongoose.model("IndustryPartner", industryPartnerSchema);

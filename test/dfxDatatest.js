@@ -1,5 +1,4 @@
 const Trainees = require("../models/trainee.model");
-// const Sample = require("../models/sample.model");
 const chai = require(`chai`);
 const chaiHttp = require(`chai-http`);
 const { expect } = require(`chai`);
