@@ -38,24 +38,73 @@ describe(`Test of retrieving trainees`, () => {
 	});
 
 	describe("/Put data", () => {
-		it("/should update the given profile by id", async () => {
+		it("/should not update the fields on the database if the data supplied is bad data", async () => {
 			const profileToBeUpdated = testDataArray[0];
-			profileToBeUpdated.personalDetails.name.firstName = "Test";
-			profileToBeUpdated.personalDetails.name.lastName = "Data";
-
 			const updateTheProfile = {
-				"firstName": "Data",
-				"lastName": "Test"
+				"firstname": "TestData",
+				"lastName": "DataTest",
+				"personalEmail": "testemail@test.com",
+				"workEmail": "workEmail@df.com",
+				"gitHub": "https://github.com/TesTperson",
+				"linkedIn": "https://www.linkedin.com/in/test-person-123456/",
+				"telNo": "+447911123456",
+				"gender": "male",
+				"personalityType": "INTJ-Architect",
+				"nationality": "United_Kingdom"
 			};
 
-			console.log(profileToBeUpdated._id);
+			const res = await chai
+				.request(server)
+				.put(`/trainee/${profileToBeUpdated._id}/edit`)
+				.send(updateTheProfile);
+
+			expect(res).to.have.status(400);
+			expect(res.text).to.be.a(`string`).eql(`Update not possible.`);
+		});
+
+		it(`/should validate the input and not allow fields that don't meet minimum requirements or are invalid inputs `, async () => {
+			const profileToBeUpdated = testDataArray[1];
+			const updateTheProfile = {
+				"firstName": "TestName",
+				"lastName": "DataTest",
+				"personalEmail": "testemail@test.com",
+				"workEmail": "workEmail@df.com",
+				"gitHub": "https://github/TesTperson",
+				"linkedIn": "https://www.linkedin/in/test-person-123456/",
+				"telNo": "07911123",
+				"gender": "male",
+				"personalityType": "INTJ-Architect",
+				"nationality": "United_Kingdom"
+			};
+			const res = await chai
+				.request(server)
+				.put(`/trainee/${profileToBeUpdated._id}/edit`)
+				.send(updateTheProfile);
+
+			expect(res).to.have.status(400);
+			expect(res.text).to.be.a(`string`).eql(`Update not possible.`);
+		});
+
+		it("/should update the given profile by id", async () => {
+			const profileToBeUpdated = testDataArray[1];
+			const updateTheProfile = {
+				"firstName": "TestName",
+				"lastName": "DataTest",
+				"personalEmail": "testemail@test.com",
+				"workEmail": "workEmail@df.com",
+				"gitHub": "https://github.com/TesTperson",
+				"linkedIn": "https://www.linkedin.com/in/test-person-123456/",
+				"telNo": "07911123456",
+				"gender": "male",
+				"personalityType": "INTJ-Architect",
+				"nationality": "United_Kingdom"
+			};
 			const res = await chai
 				.request(server)
 				.put(`/trainee/${profileToBeUpdated._id}/edit`)
 				.send(updateTheProfile);
 
 			expect(res).to.have.status(200);
-			console.log(res.body);
 			expect(res.body).to.be.a(`string`).eql(`Profile updated!`);
 		});
 	});

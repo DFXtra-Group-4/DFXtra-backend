@@ -1,23 +1,59 @@
 const mongoose = require(`mongoose`);
 const Schema = mongoose.Schema;
 
+const { emailRegExp, phoneNumberRegExp, linkedInRegex, gitHubRegEx } = require(`../jsRegex/regEx`);
+
 const traineesSchema = new Schema({
 	userType: { type: String, default: "Graduate" },
 	personalDetails: {
 		name: {
-			firstName: { type: String, required: true },
-			lastName: { type: String, required: true }
-		},
-		gitHub: { type: String, required: true },
-		linkedIn: { type: String, required: true },
-		contact: {
-			telNo: { type: Number, required: true },
-			email: {
-				email: { type: String, required: true },
-				workEmail: { type: String, required: true }
+			firstName: {
+				type: String,
+				required: [true, "No firstName supplied"],
+				validate: {
+					validator: value => {
+						return value.length > 1;
+					},
+					message: "first name not long enough"
+				}
+			},
+			lastName: {
+				type: String,
+				required: [true, "No lastName supplied"],
+				validate: {
+					validator: value => {
+						return value.length > 1;
+					},
+					message: "last name not long enough"
+				}
 			}
 		},
-		profileHeadline: { type: String, required: true }
+		gitHub: { type: String, required: true, match: [gitHubRegEx, "Not valid link"] },
+		linkedIn: { type: String, required: true, match: [linkedInRegex, "Not valid link"] },
+		contact: {
+			telNo: {
+				type: Number,
+				match: [phoneNumberRegExp, `Invalid phone number supplied`],
+				required: false
+			},
+			email: {
+				email: {
+					type: String,
+					required: [true, "No email supplied"],
+					match: [emailRegExp, `Invalid Email format`]
+				},
+				workEmail: {
+					type: String,
+					required: [true, "No email supplied"],
+					match: [emailRegExp, `Invalid Email format`]
+				},
+				password: { type: String, required: true }
+			}
+		},
+		profileHeadline: { type: String, required: true },
+		gender: { type: String, required: true },
+		nationality: { type: String, required: true },
+		personalityType: { type: String, required: true }
 	},
 	personalStory: {
 		degree: {

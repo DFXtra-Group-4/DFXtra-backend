@@ -13,10 +13,14 @@
 				"telNo": "0987654321",
 				"email": {
 					"email": "hello@world.com",
-					"workEmail": "hello@df.com"
+					"workEmail": "hello@df.com",
+					"password": "myPass"
 				}
 			},
-			"profileHeadline": "My Headline"
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Male",
+			"personalityType": "INTJ-Architect"
 		},
 		"personalStory": {
 			"degree": {
@@ -160,10 +164,14 @@
 				"telNo": "0987654321",
 				"email": {
 					"email": "hello@world.com",
-					"workEmail": "hello@df.com"
+					"workEmail": "hello@df.com",
+					"password": "myPass"
 				}
 			},
-			"profileHeadline": "My Headline"
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Male",
+			"personalityType": "INTJ-Architect"
 		},
 		"personalStory": {
 			"degree": {
