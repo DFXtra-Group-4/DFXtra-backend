@@ -22,10 +22,10 @@ router
 	.put(
 		[
 			check("personalDetails.name.firstName").isLength({ min: 2 }),
-			check("personalDetails.name.lastName").isLength({ min: 2 }),
-			check("personalDetails.gitHub").exists().matches(gitHubRegEx),
-			check("personalDetails.linkedOm").exists().matches(linkedInRegex),
-			check("personalDetails.contact.telNo").exists().matches(phoneNumberRegExp)
+			check("personalDetails.name.lastName").isLength({ min: 2 })
+			// check("personalDetails.gitHub").exists().matches(gitHubRegEx),
+			// check("personalDetails.linkedIn").exists().matches(linkedInRegex),
+			// check("personalDetails.contact.telNo").exists().matches(phoneNumberRegExp)
 		],
 		(req, res) => {
 			// const errors = validationResult(req);
@@ -43,12 +43,12 @@ router
 					const pDetails = trainee.personalDetails;
 					pDetails.name.firstName = req.body.firstName;
 					pDetails.name.lastName = req.body.lastName;
-					pDetails.gitHub = req.body.gitHub;
-					pDetails.linkedIn = req.body.linkedIn;
-					pDetails.contact.telNo = req.body.telNo;
-					pDetails.gender = req.body.gender;
-					pDetails.nationality = req.body.nationality;
-					pDetails.personalityType = req.body.personalityType;
+					// pDetails.gitHub = req.body.gitHub;
+					// pDetails.linkedIn = req.body.linkedIn;
+					// pDetails.contact.telNo = req.body.telNo;
+					// pDetails.gender = req.body.gender;
+					// pDetails.nationality = req.body.nationality;
+					// pDetails.personalityType = req.body.personalityType;
 
 					trainee
 						.save()
