@@ -43,12 +43,11 @@ router
 					const pDetails = trainee.personalDetails;
 					pDetails.name.firstName = req.body.firstName;
 					pDetails.name.lastName = req.body.lastName;
-					// pDetails.gitHub = req.body.gitHub;
-					// pDetails.linkedIn = req.body.linkedIn;
-					// pDetails.contact.telNo = req.body.telNo;
-					// pDetails.gender = req.body.gender;
-					// pDetails.nationality = req.body.nationality;
-					// pDetails.personalityType = req.body.personalityType;
+					pDetails.contact.email.email = req.body.personalEmail;
+					pDetails.contact.email.workEmail = req.body.workEmail;
+					pDetails.gitHub = req.body.gitHub;
+					pDetails.linkedIn = req.body.linkedIn;
+					pDetails.contact.telNo = req.body.telNo;
 
 					trainee
 						.save()

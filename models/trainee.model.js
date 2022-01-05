@@ -46,8 +46,7 @@ const traineesSchema = new Schema({
 					type: String,
 					required: [true, "No email supplied"],
 					match: [emailRegExp, `Invalid Email format`]
-				},
-				password: { type: String, required: true }
+				}
 			}
 		},
 		profileHeadline: { type: String, required: true },
