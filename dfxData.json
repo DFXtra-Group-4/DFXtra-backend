@@ -1,20 +1,18 @@
 [
 	{
-		"_id": { "$oid": "dc1ac1002b92436dc4c010b1" },
 		"userType": "Graduate",
 		"personalDetails": {
 			"name": {
-				"firstName": "Joshlan",
-				"lastName": "DigitalFutures"
+				"firstName": "Allen",
+				"lastName": "David"
 			},
-			"gitHub": "https://github.com/TesTperson",
-			"linkedIn": "https://www.linkedin.com/in/test-person-123456/",
+			"gitHub": "https://github.com/AllenDavid",
+			"linkedIn": "https://www.linkedin.com/in/allen-david-123456/",
 			"contact": {
 				"telNo": "07911123457",
 				"email": {
-					"email": "hello@world.com",
-					"workEmail": "hello@df.com",
-					"password": "myPass"
+					"email": "allenDavid@personal.com",
+					"workEmail": "hello@dfx.com"
 				}
 			},
 			"profileHeadline": "My Headline",
@@ -147,21 +145,19 @@
 		}
 	},
 	{
-		"_id": { "$oid": "dc1ac1002b92436dc4c010b2" },
 		"userType": "Graduate",
 		"personalDetails": {
 			"name": {
-				"firstName": "Joshlan",
-				"lastName": "DigitalFutures"
+				"firstName": "Griffith",
+				"lastName": "Charles"
 			},
-			"gitHub": "https://github.com/TesTperson",
-			"linkedIn": "https://www.linkedin.com/in/test-person-123456/",
+			"gitHub": "https://github.com/GriffithCharles",
+			"linkedIn": "https://www.linkedin.com/in/Charles-Griffith-123456/",
 			"contact": {
 				"telNo": "07911123457",
 				"email": {
-					"email": "hello@world.com",
-					"workEmail": "hello@df.com",
-					"password": "myPass"
+					"email": "griffithgharles@personal.com",
+					"workEmail": "griffithgcharles@dfx.com"
 				}
 			},
 			"profileHeadline": "My Headline",
@@ -294,9 +290,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "dc1ac1002b92436dc4c010b2"
-		},
 		"userType": "Graduate",
 		"personalDetails": {
 			"name": {
@@ -308,9 +301,8 @@
 			"contact": {
 				"telNo": "0791234123",
 				"email": {
-					"email": "jane@world.com",
-					"workEmail": "janedoe@df.com",
-					"password": "myPass"
+					"email": "jane@personal.com",
+					"workEmail": "janedoe@dfx.com"
 				}
 			},
 			"profileHeadline": "My Headline",
@@ -422,7 +414,6 @@
 		}
 	},
 	{
-		"_id": { "$oid": "dc1ac1002b92436dc4c010b2" },
 		"userType": "Graduate",
 		"personalDetails": {
 			"name": {
@@ -434,9 +425,8 @@
 			"contact": {
 				"telNo": "0791234111",
 				"email": {
-					"email": "willtriker@world.com",
-					"workEmail": "williamriker@df.com",
-					"password": "myPass"
+					"email": "willtriker@personal.com",
+					"workEmail": "williamriker@dfx.com"
 				}
 			},
 			"profileHeadline": "My Headline",
@@ -544,6 +534,767 @@
 				{
 					"scoreName": "Java Exam",
 					"score": "75%"
+				}
+			]
+		}
+	},
+	{
+		"userType": "Graduate",
+		"personalDetails": {
+			"name": {
+				"firstName": "Amelia",
+				"lastName": "Earhart"
+			},
+			"gitHub": "https://github.com/ameliaearhart",
+			"linkedIn": "https://www.linkedin.com/in/ameliaearhart-112/",
+			"contact": {
+				"telNo": "0799999999",
+				"email": {
+					"email": "aearhart@personal.com",
+					"workEmail": "ameliaearhart@dfx.com"
+				}
+			},
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Female",
+			"personalityType": "Commander-ENTJ"
+		},
+		"personalStory": {
+			"degree": {
+				"university": "Imperial",
+				"subject": "Aerospace Engineering",
+				"degreeLevel": "MEng",
+				"grade": "1st",
+				"from": "date",
+				"to": "date",
+				"weight": "L",
+				"priority": "10",
+				"description": "string"
+			},
+
+			"schoolQualifications": [
+				{
+					"school": "Global Academy",
+					"examType": "a-level",
+					"subject": "maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Global Academy",
+					"examType": "a-level",
+					"subject": "further maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Global Academy",
+					"examType": "a-level",
+					"subject": "politics",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				}
+			],
+			"workExperience": [],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Oracle",
+					"award": "Oracle Java SE",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [],
+			"achievements": [
+				{
+					"organization": "none",
+					"title": "piloting",
+					"from": "2012",
+					"to": "2013",
+					"weight": "M",
+					"priority": "5",
+					"description": "circumnavigated the world in a plane"
+				}
+			]
+		},
+		"yourTraining": {
+			"trainingPath": "Software Engineering",
+			"cohort": "Software Engineering-1",
+			"trainer": "Ed",
+			"trainingFinishDate": "SomeDateType",
+			"modules": [
+				{
+					"moduleName": "Module1, Chitter Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				},
+				{
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				}
+			]
+		},
+		"yourInfo": {
+			"badges": [
+				{
+					"badgeName": "Badge 1",
+					"badgeDescp": "Badge descp 1"
+				},
+				{
+					"badgeName": "Badge 2",
+					"badgeDescp": "Badge descp 1"
+				}
+			],
+			"scores": [
+				{
+					"scoreName": "Java Exam",
+					"score": "77%"
+				}
+			]
+		}
+	},
+
+	{
+		"userType": "Graduate",
+		"personalDetails": {
+			"name": {
+				"firstName": "Bill",
+				"lastName": "Fences"
+			},
+			"gitHub": "https://github.com/billfences",
+			"linkedIn": "https://www.linkedin.com/in/billfences-123/",
+			"contact": {
+				"telNo": "078888888",
+				"email": {
+					"email": "billfences@world.com",
+					"workEmail": "billfences@df.com"
+				}
+			},
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Female",
+			"personalityType": "Visionary-ENTP"
+		},
+		"personalStory": {
+			"degree": {
+				"university": "MIT",
+				"subject": "Computer Science",
+				"degreeLevel": "MEng",
+				"grade": "1st",
+				"from": "date",
+				"to": "date",
+				"weight": "L",
+				"priority": "10",
+				"description": "string"
+			},
+
+			"schoolQualifications": [
+				{
+					"school": "St paul's college",
+					"examType": "a-level",
+					"subject": "maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "St paul's college",
+					"examType": "a-level",
+					"subject": "further maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "St paul's college",
+					"examType": "a-level",
+					"subject": "physics",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				}
+			],
+			"workExperience": [],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Oracle",
+					"award": "Oracle Java SE",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [],
+			"achievements": []
+		},
+		"yourTraining": {
+			"trainingPath": "Data Science",
+			"cohort": "Data Science-1",
+			"trainer": "Lisa",
+			"trainingFinishDate": "SomeDateType",
+			"modules": [
+				{
+					"moduleName": "Module1, Chitter Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				},
+				{
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				}
+			]
+		},
+		"yourInfo": {
+			"badges": [
+				{
+					"badgeName": "Badge 1",
+					"badgeDescp": "Badge descp 1"
+				},
+				{
+					"badgeName": "Badge 2",
+					"badgeDescp": "Badge descp 1"
+				}
+			],
+			"scores": [
+				{
+					"scoreName": "Python Exam",
+					"score": "77%"
+				}
+			]
+		}
+	},
+	{
+		"userType": "Graduate",
+		"personalDetails": {
+			"name": {
+				"firstName": "Mikael",
+				"lastName": "Rossi"
+			},
+			"gitHub": "https://github.com/mikaelrossi",
+			"linkedIn": "https://www.linkedin.com/in/mikael-rossi11/",
+			"contact": {
+				"telNo": "0777717771",
+				"email": {
+					"email": "mikaelrossi@world.com",
+					"workEmail": "mikaelrossi@df.com"
+				}
+			},
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Male",
+			"personalityType": "Visionary-ENTP"
+		},
+		"personalStory": {
+			"degree": {
+				"university": "Nottingham",
+				"subject": "Computer Engineering",
+				"degreeLevel": "MEng",
+				"grade": "1st",
+				"from": "date",
+				"to": "date",
+				"weight": "L",
+				"priority": "10",
+				"description": "string"
+			},
+
+			"schoolQualifications": [
+				{
+					"school": "St paul's college",
+					"examType": "a-level",
+					"subject": "computing",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "St paul's college",
+					"examType": "a-level",
+					"subject": "psychology",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "St paul's college",
+					"examType": "a-level",
+					"subject": "biology",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				}
+			],
+			"workExperience": [],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Python Institute",
+					"award": "PCAP",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [],
+			"achievements": []
+		},
+		"yourTraining": {
+			"trainingPath": "Data Science",
+			"cohort": "Data Science-1",
+			"trainer": "Lisa",
+			"trainingFinishDate": "SomeDateType",
+			"modules": [
+				{
+					"moduleName": "Module1, Chitter Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				},
+				{
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				}
+			]
+		},
+		"yourInfo": {
+			"badges": [
+				{
+					"badgeName": "Badge 1",
+					"badgeDescp": "Badge descp 1"
+				},
+				{
+					"badgeName": "Badge 2",
+					"badgeDescp": "Badge descp 1"
+				}
+			],
+			"scores": [
+				{
+					"scoreName": "Python Exam",
+					"score": "79%"
+				}
+			]
+		}
+	},
+	{
+		"userType": "Graduate",
+		"personalDetails": {
+			"name": {
+				"firstName": "Ellie",
+				"lastName": "Wright"
+			},
+			"gitHub": "https://github.com/elliewright",
+			"linkedIn": "https://www.linkedin.com/in/elliewright/",
+			"contact": {
+				"telNo": "0777717731",
+				"email": {
+					"email": "elliewright@world.com",
+					"workEmail": "elliewright@df.com"
+				}
+			},
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Male",
+			"personalityType": "Thinker-INTP"
+		},
+		"personalStory": {
+			"degree": {
+				"university": "Sheffield",
+				"subject": "Neuroscience",
+				"degreeLevel": "Bsc",
+				"grade": "1st",
+				"from": "date",
+				"to": "date",
+				"weight": "L",
+				"priority": "10",
+				"description": "string"
+			},
+
+			"schoolQualifications": [
+				{
+					"school": "Anduin college",
+					"examType": "a-level",
+					"subject": "chemistry",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Anduin college",
+					"examType": "a-level",
+					"subject": "english",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Anduin college",
+					"examType": "a-level",
+					"subject": "biology",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				}
+			],
+			"workExperience": [],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Oracle",
+					"award": "Oracle Java SE",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [],
+			"achievements": []
+		},
+		"yourTraining": {
+			"trainingPath": "Data Science",
+			"cohort": "Data Science-1",
+			"trainer": "Lisa",
+			"trainingFinishDate": "SomeDateType",
+			"modules": [
+				{
+					"moduleName": "Module1, Chitter Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				},
+				{
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				}
+			]
+		},
+		"yourInfo": {
+			"badges": [
+				{
+					"badgeName": "Badge 1",
+					"badgeDescp": "Badge descp 1"
+				},
+				{
+					"badgeName": "Badge 2",
+					"badgeDescp": "Badge descp 1"
+				}
+			],
+			"scores": [
+				{
+					"scoreName": "Python Exam",
+					"score": "83%"
+				}
+			]
+		}
+	},
+	{
+		"userType": "Graduate",
+		"personalDetails": {
+			"name": {
+				"firstName": "Hunte",
+				"lastName": "McMorris"
+			},
+			"gitHub": "https://github.com/hunteMcMorris",
+			"linkedIn": "https://www.linkedin.com/in/huntemcmorris-123/",
+			"contact": {
+				"telNo": "0788888888",
+				"email": {
+					"email": "huntemorris@personal.com",
+					"workEmail": "hunemorris@dfx.com"
+				}
+			},
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Female",
+			"personalityType": "Visionary-ENTP"
+		},
+		"personalStory": {
+			"degree": {
+				"university": "MIT",
+				"subject": "Aerospace Engineering",
+				"degreeLevel": "AEng",
+				"grade": "2nd",
+				"from": "date",
+				"to": "date",
+				"weight": "L",
+				"priority": "10",
+				"description": "string"
+			},
+
+			"schoolQualifications": [
+				{
+					"school": "Harlington college",
+					"examType": "a-level",
+					"subject": "maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Harlington college",
+					"examType": "a-level",
+					"subject": "further maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Harlington college",
+					"examType": "a-level",
+					"subject": "physics",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				}
+			],
+			"workExperience": [],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Python Institute",
+					"award": "PCAP",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [],
+			"achievements": []
+		},
+		"yourTraining": {
+			"trainingPath": "Data Science",
+			"cohort": "Data Science-1",
+			"trainer": "Lisa",
+			"trainingFinishDate": "SomeDateType",
+			"modules": [
+				{
+					"moduleName": "Module1, Chitter Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				},
+				{
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				}
+			]
+		},
+		"yourInfo": {
+			"badges": [
+				{
+					"badgeName": "Badge 1",
+					"badgeDescp": "Badge descp 1"
+				},
+				{
+					"badgeName": "Badge 2",
+					"badgeDescp": "Badge descp 1"
+				}
+			],
+			"scores": [
+				{
+					"scoreName": "Python Exam",
+					"score": "77%"
+				}
+			]
+		}
+	},
+	{
+		"userType": "Graduate",
+		"personalDetails": {
+			"name": {
+				"firstName": "Oliver",
+				"lastName": "Worrle"
+			},
+			"gitHub": "https://github.com/hunteMcMorris",
+			"linkedIn": "https://www.linkedin.com/in/huntemcmorris-123/",
+			"contact": {
+				"telNo": "0788888889",
+				"email": {
+					"email": "oliverworrle@personal.com",
+					"workEmail": "oliverworrle@dfx.com"
+				}
+			},
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Male",
+			"personalityType": "Visionary-ENTP"
+		},
+		"personalStory": {
+			"degree": {
+				"university": "MIT",
+				"subject": "Aerospace Engineering",
+				"degreeLevel": "AEng",
+				"grade": "2nd",
+				"from": "date",
+				"to": "date",
+				"weight": "L",
+				"priority": "10",
+				"description": "string"
+			},
+
+			"schoolQualifications": [
+				{
+					"school": "Slough college",
+					"examType": "a-level",
+					"subject": "maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Slough college",
+					"examType": "a-level",
+					"subject": "further maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Slough college",
+					"examType": "a-level",
+					"subject": "physics",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				}
+			],
+			"workExperience": [],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Python Institute",
+					"award": "PCAP",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [],
+			"achievements": []
+		},
+		"yourTraining": {
+			"trainingPath": "Data Science",
+			"cohort": "Data Science-1",
+			"trainer": "Lisa",
+			"trainingFinishDate": "SomeDateType",
+			"modules": [
+				{
+					"moduleName": "Module1, Chitter Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				},
+				{
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				}
+			]
+		},
+		"yourInfo": {
+			"badges": [
+				{
+					"badgeName": "Badge 1",
+					"badgeDescp": "Badge descp 1"
+				},
+				{
+					"badgeName": "Badge 2",
+					"badgeDescp": "Badge descp 1"
+				}
+			],
+			"scores": [
+				{
+					"scoreName": "Python Exam",
+					"score": "77%"
 				}
 			]
 		}
