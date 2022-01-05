@@ -1,20 +1,34 @@
 const express = require("express");
+
 const router = express.Router();
-const userSchema = require("../models/trainee.model");
+const { check, validationResult } = require(`express-validator`);
 
-router.route("/").post((req, res) => {
-	const { email, password } = req.body;
-	userSchema.findOne({ email }, (err, user) => {
-		if (user && password === user.password) {
-			res.send("login successful", user);
-		} else {
-			res.send(`if login is wrong`);
+const User = require("../models/user.model");
+
+router.route(`/`).post(
+	[
+		check("email").exists().isEmail(),
+		check("password").exists()
+	],
+
+	(req, res) => {
+		const errors = validationResult(req);
+		if (!errors.isEmpty()) {
+			return res.status(422).json({
+				"message": `There were errors in the sign up data`,
+				"error": errors.array()
+			});
 		}
-	});
-});
+		const { email, password } = req.body;
 
-router.route(`/`).get((req, res) => {
-	res.send("this is the login page");
-});
+		User.findOne({ email }, (err, user) => {
+			if (user && password === user.password) {
+				res.send({ message: `Login success`, user });
+			} else {
+				res.send({ message: `Details not found` });
+			}
+		});
+	}
+);
 
 module.exports = router;
