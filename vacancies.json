@@ -1,23 +1,22 @@
 {
 	"industryPartners": [
 		{
-			"_id": "id",
+			"_id": { "$oid": "dc1ac1002b92436dc4c010b1" },
 			"userType": "IndustryPartner",
-			"name": "BigCompany",
+			"companyName": "Update company name here",
 			"email": "industryPartner@industry.com",
-			"password": "123456",
 			"vacancies": [
 				{
 					"vacancyType": "software",
 					"jobTitle": "engineer",
 					"location": "london",
-					"description": "xyz"
+					"jobDescription": "xyz"
 				},
 				{
 					"vacancyType": "dataScience",
 					"jobTitle": "data scientist",
 					"location": "london",
-					"description": "xyz"
+					"jobDescription": "xyz"
 				}
 			]
 		}

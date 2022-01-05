@@ -110,7 +110,7 @@
 			"trainingFinishDate": "SomeDateType",
 			"modules": [
 				{
-					"moduleName": "Module1, Challenge A",
+					"moduleName": "Module1, Chitter Challenge",
 					"passStatus": {
 						"pass": "passed",
 						"fail": "failed",
@@ -118,7 +118,7 @@
 					}
 				},
 				{
-					"moduleName": "Module1, Challenge B",
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
 					"passStatus": {
 						"pass": "passed",
 						"fail": "failed",
@@ -140,12 +140,8 @@
 			],
 			"scores": [
 				{
-					"scoreName": "aptitude",
-					"score": "someNumber"
-				},
-				{
-					"scoreName": "Java",
-					"score": "someNumber"
+					"scoreName": "Java Exam",
+					"score": "90%"
 				}
 			]
 		}
@@ -261,7 +257,7 @@
 			"trainingFinishDate": "SomeDateType",
 			"modules": [
 				{
-					"moduleName": "Module1, Challenge A",
+					"moduleName": "Module1, Chitter Challenge",
 					"passStatus": {
 						"pass": "passed",
 						"fail": "failed",
@@ -269,7 +265,7 @@
 					}
 				},
 				{
-					"moduleName": "Module1, Challenge B",
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
 					"passStatus": {
 						"pass": "passed",
 						"fail": "failed",
@@ -291,12 +287,263 @@
 			],
 			"scores": [
 				{
-					"scoreName": "aptitude",
-					"score": "someNumber"
+					"scoreName": "Java Exam",
+					"score": "88%"
+				}
+			]
+		}
+	},
+	{
+		"_id": {
+			"$oid": "dc1ac1002b92436dc4c010b2"
+		},
+		"userType": "Graduate",
+		"personalDetails": {
+			"name": {
+				"firstName": "Jane",
+				"lastName": "Doe"
+			},
+			"gitHub": "https://github.com/JaneDoe",
+			"linkedIn": "https://www.linkedin.com/in/Jane-Doe-112/",
+			"contact": {
+				"telNo": "0791234123",
+				"email": {
+					"email": "jane@world.com",
+					"workEmail": "janedoe@df.com",
+					"password": "myPass"
+				}
+			},
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Female",
+			"personalityType": "Idealist-INFP"
+		},
+		"personalStory": {
+			"degree": {
+				"university": "Edinburgh",
+				"subject": "Computer Science",
+				"degreeLevel": "Bsc",
+				"grade": "1st",
+				"from": "date",
+				"to": "date",
+				"weight": "L",
+				"priority": "10",
+				"description": "string"
+			},
+
+			"schoolQualifications": [
+				{
+					"school": "Lake Farm Academy",
+					"examType": "a-level",
+					"subject": "english",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
 				},
 				{
-					"scoreName": "Java",
-					"score": "someNumber"
+					"school": "Lake Farm Academy",
+					"examType": "a-level",
+					"subject": "maths",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				}
+			],
+			"workExperience": [],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Oracle",
+					"award": "Oracle Java SE",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [
+				{
+					"title": "How to identify opportunities",
+					"url": "www.github.com",
+					"year": "2021",
+					"weight": "L",
+					"priority": "9",
+					"description": "A motivation talk that I delivered"
+				}
+			],
+			"achievements": []
+		},
+		"yourTraining": {
+			"trainingPath": "Software Engineering",
+			"cohort": "Software Engineering-1",
+			"trainer": "Ed",
+			"trainingFinishDate": "SomeDateType",
+			"modules": [
+				{
+					"moduleName": "Module1, Chitter Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				},
+				{
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				}
+			]
+		},
+		"yourInfo": {
+			"badges": [
+				{
+					"badgeName": "Badge 1",
+					"badgeDescp": "Badge descp 1"
+				},
+				{
+					"badgeName": "Badge 2",
+					"badgeDescp": "Badge descp 1"
+				}
+			],
+			"scores": [
+				{
+					"scoreName": "Java Exam",
+					"score": "72%"
+				}
+			]
+		}
+	},
+	{
+		"_id": { "$oid": "dc1ac1002b92436dc4c010b2" },
+		"userType": "Graduate",
+		"personalDetails": {
+			"name": {
+				"firstName": "William",
+				"lastName": "Riker"
+			},
+			"gitHub": "https://github.com/willriker",
+			"linkedIn": "https://www.linkedin.com/in/william-riker121/",
+			"contact": {
+				"telNo": "0791234111",
+				"email": {
+					"email": "willtriker@world.com",
+					"workEmail": "williamriker@df.com",
+					"password": "myPass"
+				}
+			},
+			"profileHeadline": "My Headline",
+			"nationality": "myNationality",
+			"gender": "Male",
+			"personalityType": "Commander-ENTJ"
+		},
+		"personalStory": {
+			"degree": {
+				"university": "Imperial",
+				"subject": "Mechanical Engineering",
+				"degreeLevel": "Bsc",
+				"grade": "1st",
+				"from": "date",
+				"to": "date",
+				"weight": "L",
+				"priority": "10",
+				"description": "string"
+			},
+
+			"schoolQualifications": [
+				{
+					"school": "Tiffins grammar school",
+					"examType": "a-level",
+					"subject": "physics",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Tiffins grammar school",
+					"examType": "a-level",
+					"subject": "chemistry",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				},
+				{
+					"school": "Tiffins grammar school",
+					"examType": "a-level",
+					"subject": "politics",
+					"grade": "A",
+					"year": "2015",
+					"weight": "L",
+					"priority": "5",
+					"description": "My school information"
+				}
+			],
+			"workExperience": [],
+			"certificatesAndAwards": [
+				{
+					"certificateType": "Cert",
+					"issuer": "Oracle",
+					"award": "Oracle Java SE",
+					"grade": "Distinction",
+					"year": "2021",
+					"weight": "L",
+					"priority": "7",
+					"description": "My description"
+				}
+			],
+			"portfolio": [],
+			"achievements": []
+		},
+		"yourTraining": {
+			"trainingPath": "Software Engineering",
+			"cohort": "Software Engineering-1",
+			"trainer": "Ed",
+			"trainingFinishDate": "SomeDateType",
+			"modules": [
+				{
+					"moduleName": "Module1, Chitter Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				},
+				{
+					"moduleName": "Module1, Rock Paper Scissors Challenge",
+					"passStatus": {
+						"pass": "passed",
+						"fail": "failed",
+						"pending": "pending"
+					}
+				}
+			]
+		},
+		"yourInfo": {
+			"badges": [
+				{
+					"badgeName": "Badge 1",
+					"badgeDescp": "Badge descp 1"
+				},
+				{
+					"badgeName": "Badge 2",
+					"badgeDescp": "Badge descp 1"
+				}
+			],
+			"scores": [
+				{
+					"scoreName": "Java Exam",
+					"score": "75%"
 				}
 			]
 		}
