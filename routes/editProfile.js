@@ -8,14 +8,14 @@ const { phoneNumberRegExp, linkedInRegex, gitHubRegEx } = require("../jsRegex/re
 router.use(express.json());
 
 router
-	.route(`/:id/edit`)
+	.route(`/:email/edit`)
 	.get((req, res) => {
-		const id = req.params.id;
-		Trainees.findById(id, (error, trainee) => {
-			if (!trainee) {
+		const { email } = req.body;
+		Trainees.findOne({ email }, (err, user) => {
+			if (!user) {
 				res.status(404).send("Not working");
 			} else {
-				res.json(trainee);
+				res.json(user);
 			}
 		});
 	})
@@ -35,8 +35,8 @@ router
 			// 		"error": errors.array()
 			// 	});
 			// }
-			const id = req.params.id;
-			Trainees.findById(id, (error, trainee) => {
+			const { email } = req.body;
+			Trainees.findOne({ email }, (error, trainee) => {
 				if (!trainee) {
 					res.status(404).send("Not working");
 				} else {

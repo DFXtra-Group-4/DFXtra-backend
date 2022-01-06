@@ -24,7 +24,7 @@ const main = async () => {
 };
 
 app.use(cors());
-app.use(`/loginPage`, loginPage);
+app.use(`/login`, loginPage);
 app.use(`/trainee`, singleTrainee);
 app.use("/trainees", allTrainees);
 app.use("/trainee", editProfile);
