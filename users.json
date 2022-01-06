@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Allen David",
+		"email": "allendavid@dfx.com",
+		"password": "Testing123!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "Griffith Charles",
+		"email": "griffithgcharles@dfx.com",
+		"password": "Testing123!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "Jane Doe",
+		"email": "janedoe@dfx.com",
+		"password": "Testing123!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "William Riker",
+		"email": "williamriker@dfx.com",
+		"password": "Testing1234!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "Amelia Earhart",
+		"email": "ameliaearhart@dfx.com",
+		"password": "Testing1234!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "Bill Fences",
+		"email": "billfences@dfx.com",
+		"password": "Testing123!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "Mikael Rossi",
+		"email": "mikaelrossi@dfx.com",
+		"password": "Testing123!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "Ellie Wright",
+		"email": "elliewright@dfx.com",
+		"password": "Testing123!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "Hunte McMorris",
+		"email": "huntemorris@dfx.com",
+		"password": "Testing1234!",
+		"roles": "Graduate"
+	},
+	{
+		"name": "Oliver Worrle",
+		"email": "oliverworrle@dfx.com",
+		"password": "Testing1234!",
+		"roles": "Graduate"
+	}
+]
