@@ -17,11 +17,12 @@ const userSchema = new mongoose.Schema({
 		match: [passwordRegex, `password doesn't meet requirements`]
 	},
 	roles: [
-            {
-                type: mongoose.Schema.Types.ObjectId,
-                ref: "Role"
-            }
-        ]
+		{
+			//type: mongoose.Schema.Types.ObjectId,
+			type: String,
+			ref: "Role"
+		}
+	]
 });
 
 const User = new mongoose.model("User", userSchema);
