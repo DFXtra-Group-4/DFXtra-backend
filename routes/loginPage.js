@@ -13,17 +13,26 @@ router.route(`/`).post(
 		console.log("Receiving");
 		if (!errors.isEmpty()) {
 			return res.status(422).json({
-				"message": `There were errors in the sign up data`,
+				"message": `There were errors in the login data`,
 				"error": errors.array()
 			});
 		}
 		const { email, password } = req.body;
 
 		User.findOne({ email }, (err, user) => {
-			if (user && password === user.password) {
-				res.send({ message: `Login success`, user });
-			} else {
-				res.send({ message: `Details not found` });
+			console.log(email);
+			console.log(password);
+			try {
+				if (user && password === user.password) {
+					res.send({ message: `Login success`, user });
+				} else {
+					res.status(404).send({ message: `Details not found` });
+				}
+			}
+			catch (err) {
+				console.log(err);
+				console.log(req.body);
+				res.status(404).send({ message: err });
 			}
 		});
 	}
