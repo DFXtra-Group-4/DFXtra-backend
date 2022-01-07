@@ -4,7 +4,11 @@ const { check, validationResult } = require(`express-validator`);
 
 const Trainees = require("../models/trainee.model");
 
-const { phoneNumberRegExp, linkedInRegex, gitHubRegEx } = require("../jsRegex/regEx");
+const {
+  phoneNumberRegExp,
+  linkedInRegex,
+  gitHubRegEx,
+} = require("../jsRegex/regEx");
 router.use(express.json());
 
 router
@@ -41,23 +45,46 @@ router
 					res.status(404).send("Not working");
 				} else {
 					const pDetails = trainee.personalDetails;
-					pDetails.name.firstName = req.body.firstName;
-					pDetails.name.lastName = req.body.lastName;
-					pDetails.contact.email.email = req.body.personalEmail;
-					pDetails.contact.email.workEmail = req.body.workEmail;
-					pDetails.gitHub = req.body.gitHub;
-					pDetails.linkedIn = req.body.linkedIn;
-					pDetails.contact.telNo = req.body.telNo;
+          pDetails.name = {
+            firstName: req.body.firstName ?? pDetails.name.firstName,
+            lastName: req.body.lastName ?? pDetails.name.lastName,
+          };
+          pDetails.contact = {
+            email: {
+              email: req.body.personalEmail ?? pDetails.contact.email.email,
+              workEmail: req.body.workEmail ?? pDetails.contact.email.workEmail,
+            },
+            telNo: req.body.telNo ?? pDetails.contact.telNo,
+          };
+          pDetails.gitHub = req.body.gitHub ?? pDetails.gitHub;
+          pDetails.linkedIn = req.body.linkedIn ?? pDetails.linkedIn;
+          pDetails.gender = req.body.gender ?? pDetails.gender;
+          pDetails.personalityType =
+            req.body.personalityType ?? pDetails.personalityType;
+          pDetails.nationality = req.body.nationality ?? pDetails.nationality;
 
-					trainee
-						.save()
-						.then(trainee => {
-							res.json(`Profile updated!`);
-						})
-						.catch(err => res.status(400).send(`Update not possible.`));
-				}
-			});
-		}
-	);
+          let schoolQs = req.body.schoolQualifications;
+          if (schoolQs) {
+            trainee.personalStory.schoolQualifications.push({
+              school: schoolQs?.school,
+              examType: schoolQs?.examType,
+              subject: schoolQs?.subject,
+              grade: schoolQs?.grade,
+              year: schoolQs?.year,
+              weight: schoolQs?.weight,
+              priority: schoolQs?.priority,
+              description: schoolQs?.description,
+            });
+          }
+          trainee
+            .save()
+            .then((trainee) => {
+              res.json(`Profile updated!`);
+            })
+            .catch((err) => res.status(400).send(`Update not possible.`));
+        }
+      });
+    }
+  );
 
 module.exports = router;
