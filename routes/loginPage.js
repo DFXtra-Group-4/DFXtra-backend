@@ -13,7 +13,7 @@ router.route(`/`).post(
 		console.log("Receiving");
 		if (!errors.isEmpty()) {
 			return res.status(422).json({
-				"message": `There were errors in the login data`,
+				"message": `Not a valid format`,
 				"error": errors.array()
 			});
 		}
@@ -28,8 +28,7 @@ router.route(`/`).post(
 				} else {
 					res.status(404).send({ message: `Details not found` });
 				}
-			}
-			catch (err) {
+			} catch (err) {
 				console.log(err);
 				console.log(req.body);
 				res.status(404).send({ message: err });
