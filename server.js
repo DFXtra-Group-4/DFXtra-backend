@@ -20,7 +20,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const main = async () => {
-	await mongoose.connect(process.env.DB_URI);
+	await mongoose.connect(
+		// console.log(
+		// 	`${process.env.DBPROTOCOL}://${process.env.DBUSER}:${process.env.DBPWD}@${process.env.DBHOST}/${process.env.DB}?${process.env.DBOPTIONS}`
+		`${process.env.DBPROTOCOL}://${process.env.DBUSER}:${process.env.DBPWD}@${process.env.DBHOST}/${process.env.DB}?${process.env.DBOPTIONS}`
+	);
 };
 
 app.use(cors());
@@ -31,7 +35,11 @@ app.use("/trainee", editProfile);
 app.use(`/vacancies`, vacancies);
 
 main()
-	.then(() => console.log(`Connecting to DB @ ${process.env.DB_URI}`))
+	.then(() =>
+		console.log(
+			`Connecting to DB @ ${process.env.DBPROTOCOL}://${process.env.DBUSER}:${process.env.DBPWD}@${process.env.DBHOST}/${process.env.DB}?${process.env.DBOPTIONS}`
+		)
+	)
 	.catch(err => console.log(err));
 
 const server = app.listen(port, host, () => {
