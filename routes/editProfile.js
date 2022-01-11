@@ -63,6 +63,8 @@ router
             pDetails.personalityType =
               req.body.personalityType ?? pDetails.personalityType;
             pDetails.nationality = req.body.nationality ?? pDetails.nationality;
+            pDetails.profileHeadline =
+              req.body.profileHeadline ?? pDetails.profileHeadline;
 
             let schoolQs = req.body.schoolQualifications;
             if (schoolQs) {
