@@ -7,7 +7,6 @@ router.use(express.json());
 
 router.route(`/:email`).get((req, res) => {
   const { email } = req.params;
-  console.log(req.params);
   Trainees.findOne(
     { "personalDetails.contact.email.workEmail": email },
     (err, user) => {
