@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh -t -t ec2-user@ip-172-31-91-44.ec2.internal <<EOF 
+ssh -t -t ec2-user@ip-172-31-91-44 <<EOF 
 
   cd ~/DFXtra-backend
 
