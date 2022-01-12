@@ -9,16 +9,17 @@ const industryPartnerSchema = new Schema({
 	address: { type: String },
 	email: { type: String },
 	about: { type: String },
-	salary: { type: String },
 	logo: { type: String },
 	rolesAvailable: { type: Number },
 	companyWebsite: { type: String },
 	vacancies: [
 		{
 			vacancyType: { type: String }, //Full time or Part time
+			salary: { type: String },
 			jobTitle: { type: String }, // Software eng or data science
 			location: { type: String },
-			jobDescription: { type: String }
+			jobDescription: { type: String },
+			logo: { type: String },
 		}
 	]
 });
