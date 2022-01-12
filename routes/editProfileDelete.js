@@ -21,6 +21,7 @@ router
   })
   .put((req, res) => {
     const { email } = req.params;
+    const { id } = req.body;
     Trainees.findOne(
       { "personalDetails.contact.email.workEmail": email },
       (error, trainee) => {
