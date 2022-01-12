@@ -19,9 +19,10 @@ const industryPartnerSchema = new Schema({
 			jobTitle: { type: String }, // Software eng or data science
 			location: { type: String },
 			jobDescription: { type: String },
-			logo: { type: String },
+			logo: { type: String }
 		}
-	]
+	],
+	salary: { type: String }
 });
 
 module.exports = mongoose.model("IndustryPartner", industryPartnerSchema);
