@@ -12,7 +12,7 @@ const editProfile = require("./routes/editProfile");
 const vacancies = require("./routes/vacancies");
 const editProfileDelete = require("./routes/editProfileDelete");
 
-const port = process.env.PORT ?? 4000;
+const port = process.env.PORT ?? 3002;
 const host = process.env.HOST ?? "localhost";
 
 const app = express();
