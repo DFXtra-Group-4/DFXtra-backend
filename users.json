@@ -58,5 +58,17 @@
 		"email": "oliverworrle@dfx.com",
 		"password": "Testing1234!",
 		"roles": "Graduate"
+	},
+	{
+		"name": "Deloitte",
+		"email": "deloitte@industry.com",
+		"password": "Testing123!",
+		"roles": "Industry"
+	},
+	{
+		"name": "TFL- Transport for London",
+		"email": "tfl@industry.com",
+		"password": "Testing123!",
+		"roles": "Industry"
 	}
 ]
