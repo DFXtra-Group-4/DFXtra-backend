@@ -29,12 +29,12 @@ const main = async () => {
 };
 
 app.use(cors());
-app.use(`/login`, loginPage);
-app.use(`/trainee`, singleTrainee);
-app.use("/trainees", allTrainees);
-app.use("/trainee", editProfile);
-app.use(`/vacancies`, vacancies);
-app.use(`/trainee`, editProfileDelete);
+// app.use(`/login`, loginPage);
+// app.use(`/trainee`, singleTrainee);
+// app.use("/trainees", allTrainees);
+// app.use("/trainee", editProfile);
+// app.use(`/vacancies`, vacancies);
+// app.use(`/trainee`, editProfileDelete);
 app.get(`/`, (req, res) => res.send(`Hello World`));
 
 // main()
