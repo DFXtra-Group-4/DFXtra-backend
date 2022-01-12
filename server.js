@@ -37,13 +37,13 @@ app.use(`/vacancies`, vacancies);
 app.use(`/trainee`, editProfileDelete);
 app.get(`/`, (req, res) => res.send(`Hello World`));
 
-main()
-  .then(() =>
-    console.log(
-      `Connecting to DB @ ${process.env.DBPROTOCOL}://${process.env.DBUSER}:${process.env.DBPWD}@${process.env.DBHOST}/${process.env.DB}?${process.env.DBOPTIONS}`
-    )
-  )
-  .catch((err) => console.log(err));
+// main()
+//   .then(() =>
+//     console.log(
+//       `Connecting to DB @ ${process.env.DBPROTOCOL}://${process.env.DBUSER}:${process.env.DBPWD}@${process.env.DBHOST}/${process.env.DB}?${process.env.DBOPTIONS}`
+//     )
+//   )
+//   .catch((err) => console.log(err));
 
 const server = app.listen(port, host, () => {
   console.log("Server started");
