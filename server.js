@@ -35,7 +35,7 @@ app.use("/trainees", allTrainees);
 app.use("/trainee", editProfile);
 app.use(`/vacancies`, vacancies);
 app.use(`/trainee`, editProfileDelete);
-app.get(`/`, (req, res) => res.send(`Hello World`));
+//app.get(`/`, (req, res) => res.send(`Hello World`));
 
 main()
 	.then(() =>
